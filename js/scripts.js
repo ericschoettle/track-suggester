@@ -50,9 +50,9 @@ $(document).ready(function() {
     if (fuckYouTotal >=2) {
       alert("go fuck yourself");
     } else if (sharpTotal >= 3) {
-      alert ("sharpTotal");
+      $("#sharp .content").prepend("<p>C# would be a good choice for you, " + name ".</p>");
       if (javaTotal >= 2) {
-        //  you should also take a look at
+        $("#sharp .content").append("You should also take a look at <a href="#java">Java</a>")
       } else if (phpTotal >=2) {
         // you should also take a look at php
       } else if (rubyTotal >=2) {
