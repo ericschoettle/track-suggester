@@ -9,21 +9,21 @@ function totals (language, question1, question2, question3, question4, question5
     var languageTotal = languageTotal + 1;
   }
   if (question2 === language) {
-    var languageTotal += 1;
+    var languageTotal = languageTotal + 1;
   }
   if (question2 === language) {
-    var languageTotal += 1;
+    var languageTotal = languageTotal + 1;
   }
   if (question2 === language) {
-    var languageTotal += 1;
+    var languageTotal = languageTotal + 1;
   }
   if (question2 === language) {
-    var languageTotal += 1;
-
+    var languageTotal = languageTotal + 1;
+  }
   return languageTotal
 }
 
- // Can I do this in a more compact way?
+ // Can I do this with for loops and arrays?
 
 // front end logic
 $(document).ready(function() {
@@ -40,17 +40,17 @@ $(document).ready(function() {
 
     var dob = $("input#date").val();
 
-    sharpTotal = totals("sharp", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
-    javaTotal = totals("java", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
-    phpTotal = totals("php", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
-    rubyTotal = totals("ruby", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
-    otherTotal = totals("other", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
-    fuckYouTotal = totals("fuck-you", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
+    sharpTotal = totals("sharp", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
+    javaTotal = totals("java", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
+    phpTotal = totals("php", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
+    rubyTotal = totals("ruby", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
+    otherTotal = totals("other", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
+    fuckYouTotal = totals("fuck-you", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
 
     if (fuckYouTotal >=2) {
-      alert("go fuck yourself")
+      alert("go fuck yourself");
     } else if (sharpTotal >= 3) {
-      alert ("sharpTotal")
+      alert ("sharpTotal");
       if (javaTotal >= 2) {
         //  you should also take a look at
       } else if (phpTotal >=2) {
@@ -105,7 +105,7 @@ $(document).ready(function() {
         // you should also take a look at php
       }
     } else {
-      alert ("polymath")
+      alert ("polymath");
     }
   });
 });
