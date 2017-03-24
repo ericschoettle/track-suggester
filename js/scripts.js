@@ -67,58 +67,58 @@ $(document).ready(function() {
       if (javaTotal >= 2) {
         $("#sharp .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
       } else if (phpTotal >= 2) {
-        $("#sharp .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#sharp .content").append("<p>You should also take a look at <a href='#php'>PHP.</a></p>");
       } else if (rubyTotal >= 2) {
-        $("#sharp .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#sharp .content").append("<p>You should also take a look at <a href='#ruby'>Ruby.</a></p>");
       } else if (otherTotal >= 2) {
-        $("#sharp .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#sharp .content").append("<p>You should also take a look at <a href='#other'>other great things to do in life.</a></p>");
       }
     } else if (javaTotal >= 3) {
-      // you should take a look at xxx
-      if (rubyTotal >= 2) {
-        $("#java .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");        //  you should also take a look at
+      $("#java .content").prepend("<p>Java would be a good choice for you, " + name + ". Learn a bit more about Java!</p>");
+      if (sharpTotal >= 2) {
+        $("#java .content").append("<p>You should also take a look at <a sharp='C#a'>Java.</a></p>");
       } else if (phpTotal >= 2) {
-        $("#java .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#java .content").append("<p>You should also take a look at <a href='#php'>PHP.</a></p>");
       } else if (rubyTotal >= 2) {
-        $("#java .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#java .content").append("<p>You should also take a look at <a href='#ruby'>Ruby.</a></p>");
       } else if (otherTotal >= 2) {
-        $("#java .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#java .content").append("<p>You should also take a look at <a href='#other'>other great things to do in life.</a></p>");
       }
     } else if (phpTotal >= 3) {
-      // you should take a look at xxx
+      $("#php .content").prepend("<p>PHP would be a good choice for you, " + name + ". Learn a bit more about PHP!</p>");
       if (javaTotal >= 2) {
-        $("#php .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");        //  you should also take a look at
+        $("#php .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
       } else if (sharpTotal >= 2) {
-        $("#php .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#php .content").append("<p>You should also take a look at <a href='#sharp'>C#.</a></p>");
       } else if (rubyTotal >= 2) {
-        $("#php .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#php .content").append("<p>You should also take a look at <a href='#ruby'>Ruby.</a></p>");
       } else if (otherTotal >= 2) {
-        $("#php .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#php .content").append("<p>You should also take a look at <a href='#other'>other great things to do in life.</a></p>");
       }
     } else if (rubyTotal >= 3) {
-      // you should take a look at xxx
+      $("#ruby .content").prepend("<p>Ruby would be a good choice for you, " + name + ". Learn a bit more about Ruby!</p>");
       if (javaTotal >= 2) {
-        $("#ruby .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");        //  you should also take a look at
+        $("#ruby .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
       } else if (phpTotal >= 2) {
-        $("#ruby .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#ruby .content").append("<p>You should also take a look at <a href='#php'>PHP.</a></p>");
       } else if (sharpTotal >= 2) {
-        $("#ruby .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#ruby .content").append("<p>You should also take a look at <a href='#sharp'>C#.</a></p>");
       } else if (otherTotal >= 2) {
-        $("#ruby .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#ruby .content").append("<p>You should also take a look at <a href='#other'>other great things to do in life.</a></p>");
       }
     } else if (otherTotal >= 3) {
-      // you should take a look at xxx
+      $("#other .content").prepend("<p>Other things be a good choice for you, " + name + ". This isn't to say you wouldn't be great for programming - odds are, programming could use a few more artistic, people oriented, wonderful people like yourself. Just know that it sounds like you might not need programming as much as it needs you</p>");
       if (javaTotal >= 2) {
-        $("#other .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");        //  you should also take a look at
+        $("#other .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
       } else if (phpTotal >= 2) {
-        $("#other .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#other .content").append("<p>You should also take a look at <a href='#php'>PHP.</a></p>");
       } else if (rubyTotal >= 2) {
-        $("#other .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#other .content").append("<p>You should also take a look at <a href='#ruby'>Ruby.</a></p>");
       } else if (sharpTotal >= 2) {
-        $("#other .content").append("<p>You should also take a look at <a href='#java'>Java.</a></p>");
+        $("#other .content").append("<p>You should also take a look at <a href='#sharp'>C#.</a></p>");
       }
     } else {
-      alert ("polymath");
+      alert ("you're quite the polymath! Pick your own path!");
     }
   });
 });
