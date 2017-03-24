@@ -26,7 +26,7 @@ function totals (language, question1, question2, question3, question4, question5
   return languageTotal
 }
 
-function age (date) {
+function calculateAge (date) {
   var today = new Date();
   var regexOperator = /\d{4}/
   var yearOfBirth = regexOperator.exec(date)
@@ -52,10 +52,10 @@ $(document).ready(function() {
     var favoriteLanguage = $("input:radio[name=favorite-language]:checked").val();
 
     var dob = $("input#date").val();
-    var age = age(dob)
-
+    console.log(dob)
+    var age = calculateAge(dob);
+    console.log(age)
     sharpTotal = totals("sharp", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
-
     javaTotal = totals("java", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
     phpTotal = totals("php", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
     rubyTotal = totals("ruby", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
@@ -66,6 +66,7 @@ $(document).ready(function() {
       name = "Sir or Madam"
     }
 
+    age = calculateAge(dob)
     if (age < 14 || age > 55) {
       alert("Way to go! You get props for learning to program at your age!")
     }
