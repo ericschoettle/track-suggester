@@ -46,65 +46,63 @@ $(document).ready(function() {
 
     if (fuckYouTotal >=2) {
       alert("go fuck yourself")
-    } else if {
-      if (sharpTotal >= 3) {
-        // you should take a look at xxx
-        if (javaTotal >= 2) {
-          //  you should also take a look at
-        } else if (phpTotal >=2) {
-          // you should also take a look at php
-        } else if (rubyTotal >=2) {
-          // you should also take a look at php
-        } else if (otherTotal >=2) {
-          // you should also take a look at php
-        }
-      } else if (javaTotal >= 3) {
-        // you should take a look at xxx
-        if (rubyTotal >= 2) {
-          //  you should also take a look at
-        } else if (phpTotal >=2) {
-          // you should also take a look at php
-        } else if (rubyTotal >=2) {
-          // you should also take a look at php
-        } else if (otherTotal >=2) {
-          // you should also take a look at php
-        }
-      } else if (phpTotal >= 3) {
-        // you should take a look at xxx
-        if (javaTotal >= 2) {
-          //  you should also take a look at
-        } else if (sharpTotal >=2) {
-          // you should also take a look at php
-        } else if (rubyTotal >=2) {
-          // you should also take a look at php
-        } else if (otherTotal >=2) {
-          // you should also take a look at php
-        }
-      } else if (rubyTotal >= 3) {
-        // you should take a look at xxx
-        if (javaTotal >= 2) {
-          //  you should also take a look at
-        } else if (phpTotal >=2) {
-          // you should also take a look at php
-        } else if (sharpTotal >=2) {
-          // you should also take a look at php
-        } else if (otherTotal >=2) {
-          // you should also take a look at php
-        }
-      } else if (otherTotal >= 3) {
-        // you should take a look at xxx
-        if (javaTotal >= 2) {
-          //  you should also take a look at
-        } else if (phpTotal >=2) {
-          // you should also take a look at php
-        } else if (rubyTotal >=2) {
-          // you should also take a look at php
-        } else if (sharpTotal >=2) {
-          // you should also take a look at php
-        }
+    } else if (sharpTotal >= 3) {
+      alert ("sharpTotal")
+      if (javaTotal >= 2) {
+        //  you should also take a look at
+      } else if (phpTotal >=2) {
+        // you should also take a look at php
+      } else if (rubyTotal >=2) {
+        // you should also take a look at php
+      } else if (otherTotal >=2) {
+        // you should also take a look at php
+      }
+    } else if (javaTotal >= 3) {
+      // you should take a look at xxx
+      if (rubyTotal >= 2) {
+        //  you should also take a look at
+      } else if (phpTotal >=2) {
+        // you should also take a look at php
+      } else if (rubyTotal >=2) {
+        // you should also take a look at php
+      } else if (otherTotal >=2) {
+        // you should also take a look at php
+      }
+    } else if (phpTotal >= 3) {
+      // you should take a look at xxx
+      if (javaTotal >= 2) {
+        //  you should also take a look at
+      } else if (sharpTotal >=2) {
+        // you should also take a look at php
+      } else if (rubyTotal >=2) {
+        // you should also take a look at php
+      } else if (otherTotal >=2) {
+        // you should also take a look at php
+      }
+    } else if (rubyTotal >= 3) {
+      // you should take a look at xxx
+      if (javaTotal >= 2) {
+        //  you should also take a look at
+      } else if (phpTotal >=2) {
+        // you should also take a look at php
+      } else if (sharpTotal >=2) {
+        // you should also take a look at php
+      } else if (otherTotal >=2) {
+        // you should also take a look at php
+      }
+    } else if (otherTotal >= 3) {
+      // you should take a look at xxx
+      if (javaTotal >= 2) {
+        //  you should also take a look at
+      } else if (phpTotal >=2) {
+        // you should also take a look at php
+      } else if (rubyTotal >=2) {
+        // you should also take a look at php
+      } else if (sharpTotal >=2) {
+        // you should also take a look at php
       }
     } else {
-      // you seem to be pretty diverse - take whichever class is next, because unless there's a very specific place you want to go, odds are the language isn't as important as the concepts.
+      alert ("polymath")
     }
   });
 });
