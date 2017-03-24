@@ -10,227 +10,311 @@
   </head>
   <body>
     <div class="container">
-      <!-- heading information -->
-      <div class="jumbotron">
-        <h1>What programming language should you choose?</h1>
+      <div id="survey">
+        <div class="jumbotron">
+          <h1>Survey</h1>
+        </div>
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#survey">Survey</a></li>
+          <li role="presentation"><a href="#sharp">C#</a></li>
+          <li role="presentation"><a href="#java">Java</a></li>
+          <li role="presentation"><a href="#php">PHP</a></li>
+          <li role="presentation"><a href="#ruby">Ruby</a></li>
+          <li role="presentation"><a href="#other">Other</a></li>
+        </ul>
+        <div class="jumbotron">
+          <form id="form1">
+            <!-- name -->
+            <div class="form-group">
+              <label for="name"><h3>Your name, please</h3></label>
+              <input id="name" type="text" class="form-control">
+            </div>
+            <!-- Questions -->
+            <!-- Executive -->
+            <fieldset class="form-group" for="">
+              <legend><h3>Which business titan is most inspiring to you?</h3></legend>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="sharp" name="executive" checked>
+                  Bill Gates
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="java" name="executive">
+                  Jack Welch
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="php" name="executive">
+                  Mark Zuckerberg
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="ruby" name="executive">
+                  Jack Dorsey
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="other" name="executive">
+                  Hey, why is this list all men? That's pretty disappointing.
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="fuck-you" name="executive">
+                  Trump
+                </label>
+              </div>
+            </fieldset>
+            <!-- Activity -->
+            <fieldset class="form-group">
+              <legend><h3>What would  you like to do you do in your free time?</h3></legend>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="sharp" name="activity" checked>
+                  Probably make money
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="java" name="activity">
+                  Free time?
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="php" name="activity">
+                  Read and watch things online.
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="ruby" name="activity">
+                  I like interactive things - I want to participate what in I do.
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="other" name="activity">
+                  Make art, play in the woods, anything away from a computer, really.
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="fuck-you" name="activity">
+                  Rolling coal. My favorite is pulling up next to a bicyclist or a person with their windows down, and just filling their car with black smoke.
+                </label>
+              </div>
+            </fieldset>
+            <!-- Enterprise -->
+            <fieldset class="form-group">
+              <legend><h3>What does enterprise mean to you?</h3></legend>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="sharp" name="enterprise" checked>
+                  Big business
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="java" name="enterprise">
+                  Bigger business
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="php" name="enterprise">
+                  Start treck, duh
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="ruby" name="enterprise">
+                  I like to be enterprising
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="other" name="enterprise">
+                  Like most words, it means so many things. It's a beautiful reflection of the way languages evolve, such that an 'enterprising' individual might set up a business called their enterprise. That connotation leads to TV shows named in its honor. But 'enterprises', with time, become more and more massive, so that in business, 'enterprise' is a synonym for the largest class of businesses. Ahh, language is beautiful!
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="fuck-you" name="enterprise">
+                  Something that dweeb I beat up in middle school talked about. Come to think of it, I smacked him around pretty good in high school, too. Heh, those were good times
+                </label>
+              </div>
+            </fieldset>
+            <!-- Website -->
+            <fieldset class="form-group">
+              <legend><h3>Name a favorite website</h3></legend>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="sharp" name="favorite-website" checked>
+                  I'm more into the back end than actual webpages
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="java" name="favorite-website">
+                  Literally half of the internet
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="php" name="favorite-website">
+                  Wikipedia!!
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="ruby" name="favorite-website">
+                  Twitter
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="other" name="favorite-website">
+                  My favorite things in life aren't websites, they're people, works of art, places in nature!
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="fuck-you" name="favorite-website">
+                  mmm, breitbart and infowars
+                </label>
+              </div>
+            </fieldset>
+            <!-- Language -->
+            <fieldset class="form-group">
+              <legend><h3>If you have one, what is your favorite programming language?</h3></legend>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="sharp" name="favorite-language" checked>
+                  C#
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="java" name="favorite-language">
+                  Java
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="php" name="favorite-language">
+                  PHP
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="ruby" name="favorite-language">
+                  Ruby
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="other" name="favorite-language">
+                  My passions generally aren't programming
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" value="fuck-you" name="favorite-language">
+                  Your mom! No seriousy, I like to program your mom.
+                </label>
+              </div>
+            </fieldset>
+            <!-- Date of Birth -->
+            <div class="form-group">
+              <label for="date"><h3>When were you born?</h3></label>
+              <input id="date" type="date" class="form-control">
+            </div>
+            <!-- Submit -->
+            <button type="submit" class="btn btn-info btn-lg btn-block">Submit</button>
+          </form>
+
+        </div>
       </div>
-      <!-- form questions -->
-      <div class="jumbotron">
-        <form id="form1">
-          <!-- name -->
-          <div class="form-group">
-            <label for="name"><h3>Your name, please</h3></label>
-            <input id="name" type="text" class="form-control">
-          </div>
-          <!-- Questions -->
-          <!-- Executive -->
-          <fieldset class="form-group" for="">
-            <legend><h3>Which business titan is most inspiring to you?</h3></legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="sharp" name="executive" checked>
-                Bill Gates
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="java" name="executive">
-                Jack Welch
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="php" name="executive">
-                Mark Zuckerberg
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="ruby" name="executive">
-                Jack Dorsey
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="other" name="executive">
-                Hey, why is this list all men? That's pretty disappointing.
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="fuck-you" name="executive">
-                Trump
-              </label>
-            </div>
-          </fieldset>
-          <!-- Activity -->
-          <fieldset class="form-group">
-            <legend><h3>What would  you like to do you do in your free time?</h3></legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="sharp" name="activity" checked>
-                Probably make money
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="java" name="activity">
-                Free time?
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="php" name="activity">
-                Read and watch things online.
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="ruby" name="activity">
-                I like interactive things - I want to participate what in I do.
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="other" name="activity">
-                Make art, play in the woods, anything away from a computer, really.
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="fuck-you" name="activity">
-                Rolling coal. My favorite is pulling up next to a bicyclist or a person with their windows down, and just filling their car with black smoke.
-              </label>
-            </div>
-          </fieldset>
-          <!-- Enterprise -->
-          <fieldset class="form-group">
-            <legend><h3>What does enterprise mean to you?</h3></legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="sharp" name="enterprise" checked>
-                Big business
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="java" name="enterprise">
-                Bigger business
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="php" name="enterprise">
-                Start treck, duh
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="ruby" name="enterprise">
-                I like to be enterprising
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="other" name="enterprise">
-                Like most words, it means so many things. It's a beautiful reflection of the way languages evolve, such that an 'enterprising' individual might set up a business called their enterprise. That connotation leads to TV shows named in its honor. But 'enterprises', with time, become more and more massive, so that in business, 'enterprise' is a synonym for the largest class of businesses. Ahh, language is beautiful!
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="fuck-you" name="enterprise">
-                Something that dweeb I beat up in middle school talked about. Come to think of it, I smacked him around pretty good in high school, too. Heh, those were good times
-              </label>
-            </div>
-          </fieldset>
-          <!-- Website -->
-          <fieldset class="form-group">
-            <legend><h3>Name a favorite website</h3></legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="sharp" name="favorite-website" checked>
-                I'm more into the back end than actual webpages
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="java" name="favorite-website">
-                Literally half of the internet
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="php" name="favorite-website">
-                Wikipedia!!
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="ruby" name="favorite-website">
-                Twitter
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="other" name="favorite-website">
-                My favorite things in life aren't websites, they're people, works of art, places in nature!
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="fuck-you" name="favorite-website">
-                mmm, breitbart and infowars
-              </label>
-            </div>
-          </fieldset>
-          <!-- Language -->
-          <fieldset class="form-group">
-            <legend><h3>If you have one, what is your favorite programming language?</h3></legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="sharp" name="favorite-language" checked>
-                C#
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="java" name="favorite-language">
-                Java
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="php" name="favorite-language">
-                PHP
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="ruby" name="favorite-language">
-                Ruby
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="other" name="favorite-language">
-                My passions generally aren't programming
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="fuck-you" name="favorite-language">
-                Your mom! No seriousy, I like to program your mom.
-              </label>
-            </div>
-          </fieldset>
-          <!-- Date of Birth -->
-          <div class="form-group">
-            <label for="date"><h3>When were you born?</h3></label>
-            <input id="date" type="date" class="form-control">
-          </div>
-          <!-- Submit -->
-          <button type="submit" class="btn btn-info btn-lg btn-block">Submit</button>
-        </form>
+      <div id="sharp">
+        <div class="jumbotron">
+          <h1>C#</h1>
+        </div>
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="#survey">Survey</a></li>
+          <li role="presentation" class="active"><a href="#sharp">C#</a></li>
+          <li role="presentation"><a href="#java">Java</a></li>
+          <li role="presentation"><a href="#php">PHP</a></li>
+          <li role="presentation"><a href="#ruby">Ruby</a></li>
+          <li role="presentation"><a href="#other">Other</a></li>
+        <div class="jumbotron">
+
+        </div>
+      </div>
+      <div id="java">
+        <div class="jumbotron">
+          <h1>Java</h1>
+        </div>
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="#survey">Survey</a></li>
+          <li role="presentation"><a href="#sharp">C#</a></li>
+          <li role="presentation" class="active"><a href="#java">Java</a></li>
+          <li role="presentation"><a href="#php">PHP</a></li>
+          <li role="presentation"><a href="#ruby">Ruby</a></li>
+          <li role="presentation"><a href="#other">Other</a></li>
+        <div class="jumbotron">
+
+        </div>
+      </div>
+      <div id="php">
+        <div class="jumbotron">
+          <h1>PHP</h1>
+        </div>
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="#survey">Survey</a></li>
+          <li role="presentation"><a href="#sharp">C#</a></li>
+          <li role="presentation"><a href="#java">Java</a></li>
+          <li role="presentation" class="active"><a href="#php">PHP</a></li>
+          <li role="presentation"><a href="#ruby">Ruby</a></li>
+          <li role="presentation"><a href="#other">Other</a></li>
+        <div class="jumbotron">
+
+        </div>
+      </div>
+      <div id="ruby">
+        <div class="jumbotron">
+          <h1>Ruby</h1>
+        </div>
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="#survey">Survey</a></li>
+          <li role="presentation"><a href="#sharp">C#</a></li>
+          <li role="presentation"><a href="#java">Java</a></li>
+          <li role="presentation"><a href="#php">PHP</a></li>
+          <li role="presentation" class="active"><a href="#ruby">Ruby</a></li>
+          <li role="presentation"><a href="#other">Other</a></li>
+        <div class="jumbotron">
+
+        </div>
+      </div>
+      <div id="other">
+        <div class="jumbotron">
+          <h1>Other</h1>
+        </div>
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="#survey">Survey</a></li>
+          <li role="presentation"><a href="#sharp">C#</a></li>
+          <li role="presentation"><a href="#java">Java</a></li>
+          <li role="presentation"><a href="#php">PHP</a></li>
+          <li role="presentation"><a href="#ruby">Ruby</a></li>
+          <li role="presentation" class="active"><a href="#other">Other</a></li>
+        <div class="jumbotron">
+
+        </div>
       </div>
     </div>
     <div class="fuck-you">
@@ -253,8 +337,10 @@
 4. Other
   1. Readme
   2. Complete quiz
+  3. correct tense on commits
   3. submit
   4. cool ideas?
+
 
 
 
