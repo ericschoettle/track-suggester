@@ -1,6 +1,6 @@
 // back end logic
-function totals (language, question1, question2) {
-// function totals (language, question1, question2, question3, question4, question5) {
+
+function totals (language, question1, question2, question3, question4, question5) {
   var languageTotal = 0;
   if (question1 === language) {
     var languageTotal = languageTotal + 1;
@@ -8,22 +8,22 @@ function totals (language, question1, question2) {
   if (question2 === language) {
     var languageTotal = languageTotal + 1;
   }
-  // if (question2 === language) {
-  //   var languageTotal += 1;
-  // }
-  // if (question2 === language) {
-  //   var languageTotal += 1;
-  // }
-  // if (question2 === language) {
-  //   var languageTotal += 1;
-  // }
-  // if (question2 === language) {
-  //   var languageTotal += 1;
+  if (question2 === language) {
+    var languageTotal += 1;
+  }
+  if (question2 === language) {
+    var languageTotal += 1;
+  }
+  if (question2 === language) {
+    var languageTotal += 1;
+  }
+  if (question2 === language) {
+    var languageTotal += 1;
 
   return languageTotal
 }
 
- // questions - do I want global or local variables? Can I do this in a more compact way?
+ // Can I do this in a more compact way?
 
 // front end logic
 $(document).ready(function() {
@@ -34,15 +34,18 @@ $(document).ready(function() {
 
     var executive = $("input:radio[name=executive]:checked").val();
     var activity = $("input:radio[name=activity]:checked").val();
+    var enterprise = $("input:radio[name=enterprise]:checked").val();
+    var favoriteWebsite = $("input:radio[name=favorite-website]:checked").val();
+    var favoriteLanguage = $("input:radio[name=favorite-language]:checked").val();
 
     var dob = $("input#date").val();
 
-    sharpTotal = totals("sharp", executive, activity);
-    javaTotal = totals("java", executive, activity);
-    phpTotal = totals("php", executive, activity);
-    rubyTotal = totals("ruby", executive, activity);
-    otherTotal = totals("other", executive, activity);
-    fuckYouTotal = totals("fuck-you", executive, activity);
+    sharpTotal = totals("sharp", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
+    javaTotal = totals("java", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
+    phpTotal = totals("php", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
+    rubyTotal = totals("ruby", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
+    otherTotal = totals("other", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
+    fuckYouTotal = totals("fuck-you", executive, acitvity, enterprise, favoriteWebsite,favoriteLanguage);
 
     if (fuckYouTotal >=2) {
       alert("go fuck yourself")
