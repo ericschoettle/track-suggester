@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Programming track suggester</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script type="text/javascript" src="js/jquery-3.2.0.js"></script>
@@ -16,14 +16,14 @@
       </div>
       <!-- form questions -->
       <div class="jumbotron">
-        <form id="form">
+        <form id="form1">
           <!-- name -->
           <div class="form-group">
             <label for="name"><h3>Your name, please</h3></label>
             <input id="name" type="text" class="form-control">
           </div>
           <!-- Questions -->
-          <fieldset class="form-group">
+          <fieldset class="form-group" for="">
             <legend><h3>Which business titan is most inspiring to you?</h3></legend>
             <div class="form-check">
               <label class="form-check-label">
@@ -66,64 +66,64 @@
             <legend><h3>What would  you like to do you do in your free time?</h3></legend>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="sharp-and-java" name="executive" checked>
+                <input type="radio" class="form-check-input" value="sharp-and-java" name="activity" checked>
                 Probably make money
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="php" name="executive">
+                <input type="radio" class="form-check-input" value="php" name="activity">
                 Read and watch things online.
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="ruby" name="executive">
+                <input type="radio" class="form-check-input" value="ruby" name="activity">
                 I like interactive things - I want to participate in I do.
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="other" name="executive">
+                <input type="radio" class="form-check-input" value="other" name="activity">
                 Make art, play in the woods, anything away from a computer, really.
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="fuck-you" name="executive">
+                <input type="radio" class="form-check-input" value="fuck-you" name="activity">
                 Rolling coal. My favorite is pulling up next to a bicyclist or a person with their windows down, and just filling their car with black smoke.
               </label>
             </div>
           </fieldset>
           <fieldset class="form-group">
-            <legend><h3>What would  you like to do you do in your free time?</h3></legend>
+            <legend><h3>What would you like to do you do in your free time?</h3></legend>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="sharp-and-java" name="executive" checked>
+                <input type="radio" class="form-check-input" value="sharp-and-java" name="activity" checked>
                 Probably make money
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="php" name="executive">
+                <input type="radio" class="form-check-input" value="php" name="activity">
                 Read and watch things online.
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="ruby" name="executive">
-                I like interactive things - I want to participate in I do.
+                <input type="radio" class="form-check-input" value="ruby" name="activity">
+                I like interactive things - I want to participate in what I do.
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="other" name="executive">
+                <input type="radio" class="form-check-input" value="other" name="activity">
                 Make art, play in the woods, anything away from a computer, really.
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" value="fuck-you" name="executive">
+                <input type="radio" class="form-check-input" value="fuck-you" name="activity">
                 Rolling coal. My favorite is pulling up next to a bicyclist or a person with their windows down, and just filling their car with black smoke.
               </label>
             </div>
@@ -144,7 +144,7 @@
 
 <!-- plan for project:
 1. Start with basic HTML
-  a) Questions
+  a) Questions#
   b) suggestions
 2. Branching structure
   a) gather inputs and sum up responses
