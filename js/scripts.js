@@ -26,8 +26,13 @@ function totals (language, question1, question2, question3, question4, question5
   return languageTotal
 }
 
-
- // Can I do this with for loops and arrays?
+function age (date) {
+  var today = new Date();
+  var regexOperator = /\d{4}/
+  var yearOfBirth = regexOperator.exec(date)
+  var currentYear = regexOperator.exec(today)
+  var age = parseFloat(currentYear[0]) - parseFloat(yearOfBirth[0])
+}
 
 // front end logic
 function scrollTo(hash) {
@@ -47,6 +52,7 @@ $(document).ready(function() {
     var favoriteLanguage = $("input:radio[name=favorite-language]:checked").val();
 
     var dob = $("input#date").val();
+    var age = age(dob)
 
     sharpTotal = totals("sharp", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
 
@@ -60,12 +66,14 @@ $(document).ready(function() {
       name = "Sir or Madam"
     }
 
-    // if (age<14 || age>55) {
-    //   alert("Way to go! You get props for learning to program at your age!")
-    // }
+    if (age < 14 || age > 55) {
+      alert("Way to go! You get props for learning to program at your age!")
+    }
 
     if (fuckYouTotal >= 2) {
-      alert("go fuck yourself");
+      $(".container").hide();
+      $(".fuck-you").show();
+
     } else if (sharpTotal >= 3) {
       scrollTo("sharp")
       $("#sharp .content").prepend("<p>C# would be a good choice for you, " + name + ". Learn a bit more about C#</p>");
