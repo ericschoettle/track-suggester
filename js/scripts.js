@@ -32,6 +32,7 @@ function calculateAge (date) {
   var yearOfBirth = regexOperator.exec(date)
   var currentYear = regexOperator.exec(today)
   var age = parseFloat(currentYear[0]) - parseFloat(yearOfBirth[0])
+  return age
 }
 
 // front end logic
@@ -52,9 +53,8 @@ $(document).ready(function() {
     var favoriteLanguage = $("input:radio[name=favorite-language]:checked").val();
 
     var dob = $("input#date").val();
-    console.log(dob)
     var age = calculateAge(dob);
-    console.log(age)
+
     sharpTotal = totals("sharp", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
     javaTotal = totals("java", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
     phpTotal = totals("php", executive, activity, enterprise, favoriteWebsite, favoriteLanguage);
@@ -66,7 +66,7 @@ $(document).ready(function() {
       name = "Sir or Madam"
     }
 
-    age = calculateAge(dob)
+    // age = calculateAge(dob)
     if (age < 14 || age > 55) {
       alert("Way to go! You get props for learning to program at your age!")
     }
